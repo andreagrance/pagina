@@ -1,0 +1,14 @@
+h2{
+    color: darkslategray;
+}
+.row{
+    background-color: lavender;
+}
+img{
+    width: 40%;
+    height: 50%;
+}
+div.progress{
+    width: 70%;
+}
+
