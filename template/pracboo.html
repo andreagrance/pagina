@@ -20,15 +20,44 @@
 
 <body>
   <div class="container">
-     <div class="dropup">
+     <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
     <span class="caret"></span></button>
-    <ul class="dropdown-menu ">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li class="disabled"><a href="#">JavaScript</a></li>
-      <li class="divider"></li>
-      <li><a href="#">About Us</a></li>
+    <ul class="dropdown-menu " role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+      <li class="disabled" role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+      <li class="divider" role="presentation"></li>
+      <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
     </ul>
   </div>
 </div>
+ <!--Aca creamos un boton que hace aparecer y desaparecer un div-->
+<button data-toggle="collapse" data-target="#demo" >boton plegable</button>
+<div id="demo" class="collapse"> Hellow i am Andy i is paraguayan country</div>
+
+<a href="#andy" data-toggle="collapse">Collapsible</a>
+<div id="andy" class="collapse in ">apresco y desaparesco jeje</div>
+
+<!-- ahora un panel que tb aparece y desapir-->
+<div class="panel-group" id="accordion"> 
+    <div class="panel panel-default"> 
+     <div class="panel-heading"> 
+         <h4 class="panel-title">
+            <a href="#hello" data-toggle="collapse" data-parent="#accordion" > mostraremos lo siguiente </a>
+         </h4>
+     </div>
+     <div id="hello" class="panel-collapse collapse in ">
+     <div class="panel-body"> 
+         Nuestro panel cuerpo
+     </div>
+     <div class="panel-footer">
+     este seria el pie de nuestro panel
+     </div>
+     </div>
+    </div>
+    
+</div>
+<script src="../js/eventoScript.js"></script>
+</body>
+</html>
